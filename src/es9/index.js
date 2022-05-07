@@ -24,3 +24,18 @@ const obj2 = {
 
 console.log(obj);
 console.log(obj2);
+
+const helloWorld = () => {
+  return new Promise((resolve, reject) => {
+    (true)
+      ? setTimeout(() => { resolve('Resolved yeeeeei') }, 3500)
+      : reject('Rejected, sad')
+  });
+}
+
+helloWorld()
+  .then(response => console.log(response))
+  .catch(error => console.log(error))
+  .finally( () => console.log('This is the end of the execution'));
+
+console.log('this is called first');

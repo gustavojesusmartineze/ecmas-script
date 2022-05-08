@@ -40,3 +40,31 @@ try {
 } catch (error) {
   console.log(error);
 }
+
+
+// Creates an objects from an array of key value elements
+let entries = [['name', 'Gustao'], ['age', '30'], ['salary','$75.000']];
+console.log(Object.fromEntries(entries));
+
+
+var a = ['dog', 'cat', 'hen'];
+a[100]= 'fox';
+console.log(a.length)
+
+class TaxCalculator {
+  static calculate(total) {
+    return total *.05;
+  }
+}
+
+let num = TaxCalculator.calculate(50)
+
+const foo1 = {
+  bar() {
+    console.log('a');
+  },
+  name: "a",
+  age: 20,
+}
+
+console.log(foo1);

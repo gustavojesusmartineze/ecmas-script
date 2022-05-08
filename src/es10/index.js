@@ -21,3 +21,22 @@ let someArr2 = arr1.flatMap(x => x.split(" "));
 // ["it's","Sunny","in", "", "California"]
 console.log(someArr2);
 
+
+// Trim Start
+let trimWord = '                     hello world';
+console.log(trimWord);
+console.log(trimWord.trimStart());
+
+// TrimEnd
+let trimWordX = 'hello world                     ';
+console.log(trimWordX);
+console.log(trimWordX.trimEnd());
+
+
+// catch error
+try {
+  console.log("without error");
+  throw new Error('this is a basic error');
+} catch (error) {
+  console.log(error);
+}

@@ -91,3 +91,37 @@ delete foo.name
 console.log(foo);
 
 
+
+const foo2 = [1, 2, 3];
+const [n] = foo2;
+console.log(n);
+console.log(typeof(n));
+
+
+
+
+console.log(typeof(42));
+
+
+
+var start = 1;
+function SetEnd() {
+  var end = 2;
+}
+SetEnd();
+console.log(end)
+
+
+
+// Global scope set var v = 1
+var v = 1;
+var f1 = function () {
+  console.log(v); 
+}
+// The function scope set a new var v = 2
+var f2 = function () {
+  var v = 2 ;
+  f1();
+}
+
+f2();

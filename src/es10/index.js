@@ -68,3 +68,26 @@ const foo1 = {
 }
 
 console.log(foo1);
+
+// #4
+class X {
+  get Y() { return 42;}
+}
+
+var x = new X();
+console.log(x.Y)
+console.log(x.get('Y'))
+
+
+
+
+// #5
+const foo = {
+  name: 'Gustavo',
+
+}
+console.log(foo);
+delete foo.name
+console.log(foo);
+
+

@@ -59,3 +59,15 @@ const car = {
 let model = car.model ? car.model : 'X';
 console.log(model);
 
+
+// Nullish coalescing operator (??)
+function sum(a, b) {
+  a = a ?? 0;
+  b = b ?? 0;
+
+  return a + b;
+}
+
+let sumRes = sum(3, 2);
+console.log(sumRes);
+

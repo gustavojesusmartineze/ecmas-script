@@ -49,3 +49,13 @@ let gustavo = {
 }
 
 console.log(gustavo);
+
+// Ternary operator
+const car = {
+  brand: 'Tesla',
+  model: 'Y',
+}
+
+let model = car.model ? car.model : 'X';
+console.log(model);
+

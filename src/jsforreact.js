@@ -20,3 +20,32 @@ function calcArea2({x,y}) {
 
 console.log(calcArea(square));
 console.log(calcArea2(square));
+
+
+// spread operator on array
+let arrayOne = [1, 2, 3, 4];
+let arrayTwo = [5, 6, 7, 8, 9];
+let newArray = [...arrayOne, ...arrayTwo];
+console.log(newArray);
+
+
+// spread operator on objects
+let object1 = {
+  name: 'Gustavo',
+  age: 30,
+  salary: '$5.500'
+}
+let object2 = {
+  lastName: 'Martinez',
+  city: 'Valencia',
+  company: 'USA',
+  salary: '$6.000'
+}
+
+let gustavo = {
+  ...object1,
+  ...object2,
+  salary: '$7.500'
+}
+
+console.log(gustavo);

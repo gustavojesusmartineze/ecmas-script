@@ -71,3 +71,21 @@ function sum(a, b) {
 let sumRes = sum(3, 2);
 console.log(sumRes);
 
+
+// Checks if exis the nested value
+const user = {
+  name: 'Gustavo',
+  age: 30,
+  location: {
+    country: 'Venezuela',
+    city: {
+      zipCode: 'zipCode value',
+      ldl: 'ld value'
+    }
+  }
+}
+
+// This checks if exis the nested value
+const zipCode = user?.location?.city?.zipCode;
+
+console.log(zipCode);
